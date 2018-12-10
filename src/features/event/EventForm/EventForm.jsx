@@ -122,8 +122,8 @@ class EventForm extends Component {
                 name="date"
                 type="text"
                 component={DateInput}
-                dateFormat="M-DD-YYYY HH:mm"
-                timeFormat="HH:mm"
+                dateFormat="M/DD/YYYY h:mm a"
+                timeFormat="h:mm a" 
                 showTimeSelect
                 placeholder="Date and time of event"
               />

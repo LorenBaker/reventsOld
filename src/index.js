@@ -8,8 +8,10 @@ import App from "./app/layouts/App.jsx";
 import * as serviceWorker from "./serviceWorker";
 import { configureStore } from "./app/store/configureStore";
 import ScrollToTop from "./app/common/util/ScrollToTop.jsx";
+import { loadEvents } from "./features/event/eventActions.jsx";
 
 const store = configureStore();
+store.dispatch(loadEvents());
 
 const rootEl = document.getElementById("root");
 
